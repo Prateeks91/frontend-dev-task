@@ -1,0 +1,155 @@
+body{
+ background-image:url('../img/mainImage.jpg');
+ background-size:100% auto;
+ background-repeat:no-repeat;
+}
+a{
+ outline:0 none;
+}
+a:active, a:hover {
+    outline: 0 none;
+}
+.mSubject{
+  font-size:25px;
+}
+.mUsers{
+  font-size:20px;
+  border-bottom: 1px solid #e5e5e0;
+}
+.mDate{
+  border-bottom: 1px solid #e5e5e0;
+  padding-bottom:8px;
+}
+.mPreview{
+font-size: 17px;
+    padding: 20px;
+}
+.navSection{
+
+  box-shadow: 2px 2px 2px #888888;
+    font-size: 40px;
+    height: 100%;
+    padding: 8px 8px 8px 85px;
+}
+.navSection img{
+ height:50px;
+} 
+.myContainer{
+ margin-top:200px;
+}
+.previews{
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.unRead{
+    color: #e5e5e0;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.rowMessages{
+    border: 1px solid #f5f5f0;
+    border-radius: 5px;
+    box-shadow: 9px 2px 2px #e5e5e5;
+    padding-top: 11px;
+}
+.open{
+background-image: url("../img/open.png");
+    background-size: 25px 23px;
+    height: 23px;
+    width: 37%;
+}
+
+
+.closed{
+  background-image: url("../img/closed.png");
+    background-size: 25px 20px;
+    width: 37%;
+	height:20px;
+}
+
+.search input{
+   border: 1px solid #f5f5f0;
+    border-radius: 5px;
+    box-shadow: 9px 2px 2px #e5e5e5;
+    height: 40px;
+    padding: 8px;
+    width: 350px;
+}
+
+.search{
+ position: absolute;
+    right: 96px;
+    top: 122px;
+}
+.search i{
+ position:absolute;
+ right:15px;
+ top:12px;
+}
+.users{
+ font-size:16px;
+}
+@media(max-width:921px){
+ .search{
+    right:22px;
+ }
+ .myContainer {
+    margin-top: 130px;
+ }
+ .navSection{
+    padding: 8px 8px 8px 217px;
+ }
+ .closed,.open {
+    width: 78%;
+}
+}
+@media(max-width:767px){
+body{
+  background-position: center bottom;
+}
+.navSection {
+    box-shadow: 2px 2px 2px #888888;
+    font-size: 40px;
+    height: 100%;
+    padding: 20px 8px 8px 9px;
+}
+
+.search {
+    position: absolute;
+    right: 7px;
+    top: 115px;
+}
+
+.myContainer {
+    margin-top: 90px;
+}
+.closed,.open {
+    width: 42%;
+}
+}
+
+@media(max-width:330px){
+.navSection {
+    box-shadow: 2px 2px 2px #888888;
+    font-size: 34px;
+    height: 100%;
+    padding: 4px 15px;
+}
+.search input {
+ width:308px;
+}
+.closed, .open {
+    width: 51%;
+}
+}

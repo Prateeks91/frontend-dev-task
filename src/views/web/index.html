@@ -1,1 +1,23 @@
-<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/static/css/home.css"><script type="text/javascript" src="/static/js/home.js"></script></head><body class="light-primary-color"><h1>Good Luck!</h1></body></html>
+<!DOCTYPE html>
+<html  lang="en" ng-app="messageApp">
+ <head>
+ <title>MessageApp - My custom Messages</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="static_content/js/bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" href="static_content/css/home.css">
+ <script src="static_content/js/jquery.min.js"></script>
+ <script src="static_content/js/bootstrap/js/bootstrap.min.js"></script>
+ <script src="static_content/js/angular.min.js"></script>
+ <script src="static_content/js/angular-route.js"></script>
+ <script src="static_content/js/app.js"></script>
+ <script src="static_content/js/controllers.js"></script>
+ </head>
+ 
+ <body>
+  <div class="col-md-12 navSection">
+   <a href="/#/home"><img src="static_content/img/images.jpg">MyMessages</a>
+  </div>
+  <div ng-view></div>
+ </body>
+</html>

@@ -56,6 +56,10 @@
      * Start the web server process.
      * In cluster configuration, this is a worker
      */
+	Challenge.startServer = function(){
+		console.log("sample");
+		
+	} 
     Challenge.prototype.start = function () {
         try {
             this._server                = this._app.listen(PORT);

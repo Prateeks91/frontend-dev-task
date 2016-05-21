@@ -2,7 +2,7 @@
  * @author: Ashwin
  */
 module.exports = function (router) {
-
+    console.log("inside")
     var messages = require('../../data/message.json'),
         _        = require('underscore'),
         moment   = require('moment');
@@ -12,7 +12,7 @@ module.exports = function (router) {
     /**
      * This will give you a list of messages currently available
      */
-    router.get('/', function (req, res, next) {
+    router.get('/data', function (req, res, next) {
         var msgCopy = JSON.parse(JSON.stringify(messages));
         // Remove unnecessary keys from the list response
         var finalData = _.chain(msgCopy).map(function (msg, id) {
@@ -57,4 +57,8 @@ module.exports = function (router) {
         delete messages[id];
         res.status(204).send({status: 204});
     });
+	
+	router.get('/',function(req,res){
+		res.sendfile('./views/web/index.html');
+	})
 };

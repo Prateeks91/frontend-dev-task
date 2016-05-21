@@ -1,0 +1,32 @@
+<div class="container">
+ <div class="myContainer">
+ <div class="search">
+  <input type="text" class="form-control" placeholder="Search here"ng-model="query" ><i class="glyphicon glyphicon-search"></i>
+ </div>
+ <div class="row rowMessages" ng-repeat="message in messages | filter:query">
+  <div class="col-md-1 col-xs-3 col-sm-1">
+    <p ng-class="{'open':message.isRead,'closed':!message.isRead}"></p>
+  </div>
+  <div class="col-md-3 col-sx-9 col-sm-3">
+   <p class="users">{{message.participant}}</p>
+  </div>
+  <div class="col-md-4 col-xs-12 col-sm-4">
+   <a ng-click="passId(message.id)" href="" ng-class="{'previews':!message.isRead,'unRead':message.isRead}">{{message.preview}}</a>
+  </div>
+
+
+  <div class="col-md-2 col-xs-6 col-sm-2">
+    <p>{{message.ts | date:'d MMM,yyyy'}}</p>
+  </div>
+  
+    <div class="col-md-1 col-xs-3 col-sm-1">
+    <i class="glyphicon" ng-class="{'glyphicon-star':message.isStarred,'glyphicon-star-empty':!message.isStarred}"></i>
+ 
+   </div>
+       <div class="col-md-1 col-xs-3 col-sm-1">
+    <a class="glyphicon glyphicon-trash" href="" ng-click="deleteThis(message.id)"></a>
+ 
+   </div>
+ </div>
+ </div>
+</div>

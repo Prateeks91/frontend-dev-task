@@ -48,7 +48,7 @@
       }
     ],
     "preview": "Hello,\n Thanks for the quote. I appreciate the swift response!",
-    "isRead": false,
+    "isRead": true,
     "isStarred": false
   },
   "5": {
