@@ -11,5 +11,5 @@
 ## How to see front end changes
 
 - Open web browser and type the address http://localhost:8088
-- Rsize borwser window to see responsive changes
+- Resize browser window to see responsive changes
 
